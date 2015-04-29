@@ -1,0 +1,15 @@
+.ios {
+	font-family: 'iOS';
+}
+@font-face {
+  font-family: 'iOS';
+	src: url(iOS.eot');
+  src: url(iOS.eot?#iefix') format('embedded-opentype'),
+  url('iOS.ttf')  format('truetype'), 
+	url('iOS.woff')  format('woff'),
+	url('iOS.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

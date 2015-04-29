@@ -1,0 +1,140 @@
+.item__open{
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-width: 0px 0px 1px;
+	position: relative;
+	overflow: hidden;
+	
+	height: 0;
+	transition: height ease .5s;
+	
+}
+.item__open--visible {
+	position: relative;
+	height: 385px;
+
+}
+.item__open--left {
+	float: left;
+	
+}
+.item__open--right {
+	position: relative;
+	float: right;
+	color: white;
+	margin-top: 6px;
+}
+.item__open--right form{
+	margin-top: 27px;
+	position: relative;
+	
+}
+input.count,
+output.price {
+	position: relative;
+	margin-top: 7px;
+	float: right;
+	width: 85px;
+	margin-right: 20px;
+	height: 29px;
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding-left: 11px;
+	padding-top: 5px;
+	padding-right: 32px;
+	line-height: 29px;
+	text-align: right;
+	font-size: 24px;
+	color: #B4282E;
+}
+input.count:first-of-type {
+	margin-right: 102px;
+}
+output.price {
+	right: 82px;
+}
+.item__open--right form .quantity,
+.item__open--right form .kopiyka {
+	top: 12px;
+}
+.item__open--img {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7E7B7B;
+	border-radius: 5px;
+	position: relative;
+	margin-left: 30px;
+	margin-top: 10px;
+	background-size: contain;
+}
+
+span.ios__in-basket {
+	position: absolute;
+	top: -28px;
+	left: 62px;
+}
+span.ios__to-pay {
+	position: absolute;
+	top: -28px;
+	left: 209px;
+}
+.quantity {
+	position: absolute;
+	left: 107px;
+	top: -1px;
+	font-size: 14px;
+	color: #B4282E;
+}
+.kopiyka {
+	position: absolute;
+	right: 107px;
+	top: -1px;
+	font-size: 14px;
+	color: #B4282E;
+}
+
+.ios__minus,
+.ios__plus {
+	line-height: 24px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+
+}
+.anchor.anchor-item {
+	margin-left: -1px;
+	margin-top: 57px;
+	line-height: 40px;
+}
+.anchor.anchor-item--choosen {
+	color: @yellow;
+}
+
+input.text,
+output.text {
+	position: relative;
+	margin-top: 7px;
+	float: right;
+	width: 85px;
+	margin-right: 20px;
+	height: 29px;
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding-left: 11px;
+	padding-top: 5px;
+	padding-right: 32px;
+	line-height: 29px;
+	text-align: right;
+	font-size: 24px;
+	color: #B4282E;
+}
+input.text:first-of-type {
+	margin-right: 94px;
+}
+output.text {
+	right: 74px;
+}
