@@ -1,5 +1,5 @@
 .calendar__block {
-position: absolute;
+	position: absolute;
 	width: 967px;
 	height: 294px;
 	border: 1px solid #FFFFFF;
@@ -13,6 +13,18 @@ position: absolute;
 	opacity: 0;
 	transition: opacity ease .5s;
 	padding: 1px 15px;
+}
+.calendar__block-background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	display: none;
+
+	&--visible {
+		display: block;
+		z-index: 9;
+	}
 }
 .calendar__block--visible {
 	display: block;
@@ -103,9 +115,11 @@ table.calendar__day td:nth-child(6) {
 	color: @data-red;
 }
 
-.witing_items {
-	background-color: @yellow-data;
+.waiting_items {
+	background-color: #fbc501;
 }
-.in_stock {
-	background-color: @data-background-red;
+
+.curr_date {
+	background-color: #b4282e;
+	color: white !important;
 }

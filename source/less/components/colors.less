@@ -1,0 +1,73 @@
+
+.inner__colors {
+	background-color: #662D91;
+	position: relative;
+	height: 40px;
+	border-radius: 5px;
+	z-index: 101;
+}
+.palette {
+	position: relative;
+	z-index: 100;
+	top: -4px;
+	right: 1px;
+	width: 52px;
+	background-color: transparent;
+	overflow: hidden;
+
+	height: 0;
+	transition: padding, height ease .5s;
+	padding-top: 0;
+	border: 1px solid transparent;
+}
+.palette--visible {
+	border-radius: 0 0 5px 5px;
+	border: 1px solid @border;
+	border-top: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+.color {
+	width: 52px;
+	height: 40px;
+	margin-top: -1px;
+	margin-left: -1px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #5F5F5F;
+	background-color: transparent;
+}
+.color:first-child {
+	border-top: none;
+	height: 41px;
+}
+
+.color:last-child {
+	border-radius: 0 0 5px 5px;
+	margin-bottom: -1px;
+}
+
+.no_color {
+	background-color: #313131;
+	border: 1px solid #5F5F5F;
+}
+
+.del-cross {
+    display:block;
+    position:relative;
+    overflow:hidden; /* запрещает обтекать другие блоки */
+}
+
+.del-cross:before {
+    content:'';
+    position:absolute;
+    display:block;
+    width:auto;
+    height:auto;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0) url(../img/cross.svg) no-repeat;
+    background-size:100% 100%; /* растягивает фон на всю ширину и высоту блока */
+}

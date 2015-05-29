@@ -12,7 +12,15 @@
 	border-color: transparent;
 	background-color: transparent;
 }
-
+.hidden-by-anchor {
+	display: none;
+}
+.hidden-by-search {
+	display: none;
+}
+.hidden-by-color {
+	display: none;
+}
 .item__mini:hover {
 	background-color: #464646;
 }
@@ -29,7 +37,11 @@
 	font-size: 30px;
 	margin: 0;
 	margin-left: 30px;
-	margin-right: 353px;
+	max-width: 573px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: 400;
 }
 
 
@@ -62,7 +74,7 @@ span.count:after {
 	color: #313131;
 }
 span.price:after {
-	content: "00";
+	content: attr(data-kopiyka);
 	position: absolute;
 	top: -1px;
 	left: 108px;

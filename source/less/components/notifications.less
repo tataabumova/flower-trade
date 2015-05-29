@@ -26,36 +26,54 @@
 		text-align: center;
 	}
 	&__left-layout {
+		position: relative;
 		float: left;
-		margin-top: 37px;
+		margin-top: 45px;
   		margin-left: 30px;
 	}
 
 	&__right-layout {
+		position: relative;
 		float: right;
-		margin-top: 37px;
-  		margin-right: 35px;
+		margin-top: 45px;
+  		margin-right: 40px;
 	}
 
 	&__ios-basket {
-		top: 35px;
- 		left: 58px;
+		top: -29px;
+ 		left: 33px;
 	}
 
 	&__ios-price {
-		top: 35px;
- 		right: 45px;
+		top: -29px;
+ 		right: 1px;
 	}
-
+	
 	span {
 		position: absolute;
-	}
+		display: block;
+
+		cursor: pointer;
+		}
 
 	label {
 		display: block;
 		position: relative; /*test*/
-  		
+  		padding-left: 20px;
+		cursor: pointer;
+	}
+
+	input {
+		display: none;
+	}
+	span.checked {
+		display: none;
 	}
 }
 
-  
+input[type="checkbox"]:checked ~ span.checked {
+	display: block;
+}
+input[type="checkbox"]:checked ~ span.no-checked {
+	display: none;
+}
